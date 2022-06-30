@@ -15,13 +15,13 @@ class CriptoModel:
     -consultar cambio (método)
     """
 
-    def __init__(self, origen, destino):
+    def __init__(self):
         """
         Construyendo un obejto con las monedas origen y destino
         y el cambio obtenido desde CoinApi inicializado a cero
         """
-        self.moneda_origen = origen
-        self.moneda_destino = destino
+        self.moneda_origen = ""
+        self.moneda_destino = ""
         self.cambio = 0.0
 
     def consultar_cambio(self):
