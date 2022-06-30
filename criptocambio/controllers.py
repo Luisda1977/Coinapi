@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk
 
 from .models import CriptoModel
 from .views import CriptoView, CriptoViewTk
