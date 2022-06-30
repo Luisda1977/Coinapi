@@ -5,9 +5,6 @@ Modelo </////> Vista (NUNCA hay comunicación entre el modelo y la vista directa
 """
 
 
-from msilib.schema import Class
-
-
 class CriptoView:
 
     def __init__(self):
