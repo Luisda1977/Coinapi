@@ -19,3 +19,7 @@ class CriptoView:
         print("Un {} vale como {:,.2f} {}".format(
             origen, cambio, destino))
         pass
+
+    def quieres_seguir(self):
+        seguir = input("¿Quieres cambiar algo más? (s/n)")
+        return seguir.upper()

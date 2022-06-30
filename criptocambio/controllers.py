@@ -19,6 +19,6 @@ class CriptoController:
 
             seguir = ""
             while seguir.upper() not in ("S", "N"):
-                seguir = input("¿Quieres cambiar algo más? (S/N)")
+                seguir = self.vista.quieres_seguir()
 
         pass
