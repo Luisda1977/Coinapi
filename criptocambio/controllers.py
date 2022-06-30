@@ -1,5 +1,7 @@
+from tkinter import *
+
 from .models import CriptoModel
-from .views import CriptoView
+from .views import CriptoView, CriptoViewTk
 
 
 class CriptoController:
@@ -21,4 +23,12 @@ class CriptoController:
             while seguir.upper() not in ("S", "N"):
                 seguir = self.vista.quieres_seguir()
 
-        pass
+
+class CriptoControllerTk(Tk):
+    def __init__(self):
+        super() .__init__()
+        self.vista = CriptoViewTk(self)
+        self.modelo = CriptoModel()
+
+    def run(self):
+        self.mainloop()
